@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from '../login/login.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -19,7 +18,7 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(routes),
   ],
-  declarations: [AppComponent, HelloComponent, LoginComponent,GreetingsComponent],
+  declarations: [AppComponent, LoginComponent,GreetingsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
