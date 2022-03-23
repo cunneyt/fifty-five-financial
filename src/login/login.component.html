@@ -1,0 +1,26 @@
+<div class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="passwordTxt">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="emailTxt"
+        aria-describedby="email"
+        placeholder="Enter email"
+        formControlName="email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="passwordTxt">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="passwortTxt"
+        placeholder="Password"
+        formControlName="password"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
